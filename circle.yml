@@ -9,6 +9,8 @@ machine:
   pre:
     - git config --global user.name "CircleCI"
     - git config --global user.email "circleci@cureapp.jp"
+  node:
+    version: 6.2.2
 dependencies:
   post:
     - nca run nca update-modules --depth 1
