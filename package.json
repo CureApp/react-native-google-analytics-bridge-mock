@@ -21,7 +21,6 @@
   "homepage": "https://github.com/CureApp/react-native-google-analytics-bridge-mock#readme",
   "devDependencies": {
     "mocha": "^2.5.3",
-    "node-circleci-autorelease": "^2.2.0",
-    "pinkie-promise": "^2.0.1"
+    "node-circleci-autorelease": "^2.2.0"
   }
 }

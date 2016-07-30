@@ -1,7 +1,6 @@
 'use strict'
 
 var assert = require('assert')
-var Promise = require('pinkie-promise')
 var GoogleTagManager = require('..').GoogleTagManager
 
 var methods = [
