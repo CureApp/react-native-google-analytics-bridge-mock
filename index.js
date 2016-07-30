@@ -2,14 +2,14 @@
 
 class GoogleAnalytics {
     static trackScreenView(screenName) {}
-    static trackEvent(category, action, optionalValues = {}) {}
+    static trackEvent(category, action, optionalValues) {}
     static trackScreenViewWithCustomDimensionValues(screenName, customDimensionValues) {}
-    static trackEventWithCustomDimensionValues(category, action, optionalValues = {}, customDimensionValues) {}
-    static trackTiming(category, value, optionalValues = {}) {}
-    static trackPurchaseEvent(product = {}, transaction = {}, eventCategory = "Ecommerce", eventAction = "Purchase") {}
-    static trackException(error, fatal = false) {}
+    static trackEventWithCustomDimensionValues(category, action, optionalValues, customDimensionValues) {}
+    static trackTiming(category, value, optionalValues) {}
+    static trackPurchaseEvent(product, transaction, eventCategory, eventAction) {}
+    static trackException(error, fatal) {}
     static setUser(userId) {}
-    static allowIDFA(enabled = true) {}
+    static allowIDFA(enabled) {}
     static trackSocialInteraction(network, action, targetUrl) {}
     static setDryRun(enabled) {}
     static setDispatchInterval(intervalInSeconds) {}

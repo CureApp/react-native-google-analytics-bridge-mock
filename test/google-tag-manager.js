@@ -1,9 +1,9 @@
 'use strict'
 
-const assert = require('assert')
-const GoogleTagManager = require('..').GoogleTagManager
+var assert = require('assert')
+var GoogleTagManager = require('..').GoogleTagManager
 
-const methods = [
+var methods = [
     'openContainerWithId',
     'boolForKey',
     'stringForKey',
@@ -19,28 +19,28 @@ describe('GoogleTagManager', function () {
 
     describe('openContainerWithId', function () {
         it ('returns an instance of Promise', function () {
-            const result = GoogleTagManager.openContainerWithId('dummy')
+            var result = GoogleTagManager.openContainerWithId('dummy')
             assert(result instanceof Promise)
         })
     })
 
     describe('boolForKey', function () {
         it ('returns an instance of Promise', function () {
-            const result = GoogleTagManager.boolForKey('dummy')
+            var result = GoogleTagManager.boolForKey('dummy')
             assert(result instanceof Promise)
         })
     })
 
     describe('stringForKey', function () {
         it ('returns an instance of Promise', function () {
-            const result = GoogleTagManager.stringForKey('dummy')
+            var result = GoogleTagManager.stringForKey('dummy')
             assert(result instanceof Promise)
         })
     })
 
     describe('doubleForKey', function () {
         it ('returns an instance of Promise', function () {
-            const result = GoogleTagManager.doubleForKey('dummy')
+            var result = GoogleTagManager.doubleForKey('dummy')
             assert(result instanceof Promise)
         })
     })

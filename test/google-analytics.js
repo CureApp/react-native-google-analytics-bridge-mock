@@ -1,9 +1,9 @@
 'use strict'
 
-const assert = require('assert')
-const GoogleAnalytics = require('..')
+var assert = require('assert')
+var GoogleAnalytics = require('..')
 
-const methods = [
+var methods = [
     'trackScreenView',
     'trackEvent',
     'trackScreenViewWithCustomDimensionValues',
