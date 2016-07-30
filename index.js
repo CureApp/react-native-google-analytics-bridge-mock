@@ -1,42 +1,37 @@
 'use strict'
 
-class GoogleAnalytics {
-    static trackScreenView(screenName) {}
-    static trackEvent(category, action, optionalValues) {}
-    static trackScreenViewWithCustomDimensionValues(screenName, customDimensionValues) {}
-    static trackEventWithCustomDimensionValues(category, action, optionalValues, customDimensionValues) {}
-    static trackTiming(category, value, optionalValues) {}
-    static trackPurchaseEvent(product, transaction, eventCategory, eventAction) {}
-    static trackException(error, fatal) {}
-    static setUser(userId) {}
-    static allowIDFA(enabled) {}
-    static trackSocialInteraction(network, action, targetUrl) {}
-    static setDryRun(enabled) {}
-    static setDispatchInterval(intervalInSeconds) {}
-    static setTrackUncaughtExceptions(enabled) {}
-    static setAnonymizeIp(enabled) {}
-    static setOptOut(enabled) {}
-    static setAppName(appName) {}
-    static setTrackerId(trackerId) {}
-    static setAppVersion(appVersion) {}
+function GoogleAnalytics() {}
+GoogleAnalytics.trackScreenView = function (screenName) {}
+GoogleAnalytics.trackEvent = function (category, action, optionalValues) {}
+GoogleAnalytics.trackScreenViewWithCustomDimensionValues = function (screenName, customDimensionValues) {}
+GoogleAnalytics.trackEventWithCustomDimensionValues = function (category, action, optionalValues, customDimensionValues) {}
+GoogleAnalytics.trackTiming = function (category, value, optionalValues) {}
+GoogleAnalytics.trackPurchaseEvent = function (product, transaction, eventCategory, eventAction) {}
+GoogleAnalytics.trackException = function (error, fatal) {}
+GoogleAnalytics.setUser = function (userId) {}
+GoogleAnalytics.allowIDFA = function (enabled) {}
+GoogleAnalytics.trackSocialInteraction = function (network, action, targetUrl) {}
+GoogleAnalytics.setDryRun = function (enabled) {}
+GoogleAnalytics.setDispatchInterval = function (intervalInSeconds) {}
+GoogleAnalytics.setTrackUncaughtExceptions = function (enabled) {}
+GoogleAnalytics.setAnonymizeIp = function (enabled) {}
+GoogleAnalytics.setOptOut = function (enabled) {}
+GoogleAnalytics.setAppName = function (appName) {}
+GoogleAnalytics.setTrackerId = function (trackerId) {}
+GoogleAnalytics.setAppVersion = function (appVersion) {}
+
+function GoogleTagManager() {}
+GoogleTagManager.openContainerWithId = function (containerId) {
+    return Promise.resolve()
 }
-
-class GoogleTagManager {
-    static openContainerWithId(containerId){
-        return Promise.resolve()
-    }
-
-    static boolForKey(key){
-        return Promise.resolve(true)
-    }
-
-    static stringForKey(key){
-        return Promise.resolve('dummy')
-    }
-
-    static doubleForKey(key){
-        return Promise.resolve(1)
-    }
+GoogleTagManager.boolForKey = function (key) {
+    return Promise.resolve(true)
+}
+GoogleTagManager.stringForKey = function (key) {
+    return Promise.resolve('dummy')
+}
+GoogleTagManager.doubleForKey = function (key) {
+    return Promise.resolve(1)
 }
 
 GoogleAnalytics.GoogleTagManager = GoogleTagManager
