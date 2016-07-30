@@ -1,0 +1,26 @@
+{
+  "name": "react-native-google-analytics-bridge-node",
+  "version": "0.0.0",
+  "description": "Mock for react-native-google-analytics-bridge in nodejs environment, used for testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CureApp/react-native-google-analytics-bridge-node.git"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "CureApp, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CureApp/react-native-google-analytics-bridge-node/issues"
+  },
+  "homepage": "https://github.com/CureApp/react-native-google-analytics-bridge-node#readme",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "node-circleci-autorelease": "^2.2.0"
+  }
+}
