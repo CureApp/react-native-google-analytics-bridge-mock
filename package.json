@@ -1,6 +1,6 @@
 {
   "name": "react-native-google-analytics-bridge-mock",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Mock for react-native-google-analytics-bridge, used for testing.",
   "main": "index.js",
   "scripts": {
