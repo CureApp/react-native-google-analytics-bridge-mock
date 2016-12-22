@@ -22,17 +22,24 @@ GoogleAnalytics.setAppVersion = function (appVersion) {}
 
 function GoogleTagManager() {}
 GoogleTagManager.openContainerWithId = function (containerId) {
-    return Promise.resolve()
+  return Promise.resolve()
 }
 GoogleTagManager.boolForKey = function (key) {
-    return Promise.resolve(true)
+  return Promise.resolve(true)
 }
 GoogleTagManager.stringForKey = function (key) {
-    return Promise.resolve('dummy')
+  return Promise.resolve('dummy')
 }
 GoogleTagManager.doubleForKey = function (key) {
-    return Promise.resolve(1)
+  return Promise.resolve(1)
 }
+function GoogleAnalyticsTracker(){}
+GoogleAnalytics.GoogleAnalyticsTracker = GoogleAnalyticsTracker;
+function GoogleAnalyticsSettings(){}
+GoogleAnalyticsSettings.setDispatchInterval = function(interval){
+  return Promise.resolve(interval);
+}
+GoogleAnalytics.GoogleAnalyticsSettings = GoogleAnalyticsSettings;
 
-GoogleAnalytics.GoogleTagManager = GoogleTagManager
-module.exports = GoogleAnalytics
+GoogleAnalytics.GoogleTagManager = GoogleTagManager;
+module.exports = GoogleAnalytics;
