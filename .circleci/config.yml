@@ -23,8 +23,6 @@ jobs:
       - run: git config --global user.email "circleci@cureapp.jp"
       - run: npm install
       - run: nca run nca update-modules --depth 1
-      - run: npm test
-      - run: npm install
       - run: nca release --prefix v
       - run: nca run nca notice gh-pages
 workflows:
